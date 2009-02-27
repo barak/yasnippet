@@ -1,0 +1,18 @@
+Source: yasnippet
+Section: editors
+Priority: extra
+Maintainer: Julián Hernández Gómez <julianhernandez@gmail.com>
+Build-Depends: debhelper (>= 7), python-docutils, python-pygments
+Standards-Version: 3.8.0
+Homepage: http://code.google.com/p/yasnippet/
+
+Package: yasnippet
+Architecture: any
+Depends: emacs22 | emacsen, ${misc:Depends}
+Description: A template system for Emacs
+ YASnippet (yet another snippet extension for Emacs) is a template
+ system for Emacs. It allows you to type an abbrevation and
+ automatically expand the abbreviation into function templates.
+ .
+ Bundled language templates includes: C, C++, C#, Perl, Python, Ruby,
+ SQL, LaTeX, HTML, CSS and more.

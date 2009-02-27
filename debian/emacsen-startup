@@ -1,0 +1,10 @@
+;; -*-emacs-lisp-*-
+;;
+;; Emacs startup file,for the yasnippet package
+;;
+;; The yasnippet package follows the Debian GNU/Linux 'emacsen' policy
+;; but doesn't need to compile yasnippet.el for each 'emacs flavor'.
+(setq load-path (cons (concat "/usr/share/emacs/site-lisp/yasnippet") load-path))
+(require 'yasnippet)
+(yas/initialize)
+(yas/load-directory "/usr/share/emacs/site-lisp/yasnippet/snippets")
