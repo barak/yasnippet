@@ -1,2 +1,2 @@
-doc/*css doc/*html doc/images usr/share/doc/yasnippet/html
+doc/* usr/share/doc/yasnippet/html
 snippets yasnippet.el usr/share/emacs/site-lisp/yasnippet

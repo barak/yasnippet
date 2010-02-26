@@ -3,8 +3,6 @@
 build: build-stamp
 build-stamp:
 	dh build
-	chmod +x debian/build-docs.sh
-	debian/build-docs.sh
 	touch build-stamp
 
 clean:

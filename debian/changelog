@@ -1,3 +1,17 @@
+yasnippet (0.6.1c-1) unstable; urgency=low
+
+  * New upstream release
+  * Bump Standards-Version from 3.8.0 to 3.8.4 (no changes needed).
+  * Switch to dpkg-source 3.0 (quilt) format
+  * Changed Section to lisp to match override
+  * Depend on emacs instead of emacs22
+  * Remove python-docutils and python-pygments from build-deps
+  * Updated Copyright information
+  * Added doc-base control file
+  * Added watch file
+
+ -- Julián Hernández Gómez <julianhernandez@gmail.com>  Fri, 26 Feb 2010 10:34:33 +0800
+
 yasnippet (0.5.10-1) unstable; urgency=low
 
   * Initial release. (Closes: #517948, #484465)

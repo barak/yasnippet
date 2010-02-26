@@ -1,0 +1,4 @@
+version=3
+
+http://code.google.com/p/yasnippet/downloads/list \
+http://yasnippet.googlecode.com/files/yasnippet-(.*)\.tar\.bz2
