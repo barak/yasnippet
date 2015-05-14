@@ -1,3 +1,10 @@
+yasnippet (0.9.0~beta1-1) unstable; urgency=medium
+
+  * New upstream release
+  * Modernize debian packaging scripts
+
+ -- Barak A. Pearlmutter <bap@debian.org>  Thu, 14 May 2015 21:20:23 +0100
+
 yasnippet (0.6.1c-1) unstable; urgency=low
 
   * New upstream release
