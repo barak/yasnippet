@@ -1,22 +1,10 @@
 #!/usr/bin/make -f
 
-build: build-stamp
-build-stamp:
-	dh build
-	touch build-stamp
+# Uncomment this to turn on verbose mode.
+# export DH_VERBOSE=1
 
-clean:
-	dh clean
+%:
+	dh $@ --parallel
 
-install: build install-stamp
-install-stamp:
-	dh install
-	touch install-stamp
-
-binary-arch: install
-	dh binary-arch
-
-binary-indep: install
-	dh binary-indep
-
-binary: binary-arch binary-indep
+override_dh_auto_build:
+	emacs -Q -L . --batch -l doc/yas-doc-helper.el -f yas--generate-html-batch

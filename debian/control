@@ -5,12 +5,13 @@ Maintainer: Julián Hernández Gómez <julianhernandez@gmail.com>
 Uploaders: Barak A. Pearlmutter <bap@debian.org>
 Build-Depends: debhelper (>= 9)
 Standards-Version: 3.9.6
-Homepage: http://github.com/capitaomorte/yasnippet
+Homepage: https://github.com/capitaomorte/yasnippet
 
 Package: yasnippet
 Architecture: any
 Depends: emacs | emacsen, ${misc:Depends}
-Description: A template system for Emacs
+Recommends: yasnippet-snippets
+Description: Template system for Emacs
  YASnippet (yet another snippet extension for Emacs) is a template
  system for Emacs. It allows you to type an abbrevation and
  automatically expand the abbreviation into function templates.
