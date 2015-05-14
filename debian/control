@@ -2,9 +2,10 @@ Source: yasnippet
 Section: lisp
 Priority: extra
 Maintainer: Julián Hernández Gómez <julianhernandez@gmail.com>
-Build-Depends: debhelper (>= 7)
-Standards-Version: 3.8.4
-Homepage: http://code.google.com/p/yasnippet/
+Uploaders: Barak A. Pearlmutter <bap@debian.org>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.6
+Homepage: http://github.com/capitaomorte/yasnippet
 
 Package: yasnippet
 Architecture: any
