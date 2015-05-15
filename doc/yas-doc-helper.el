@@ -128,11 +128,7 @@
 
 (let* ((dir (if load-file-name (file-name-directory load-file-name)
               default-directory))
-       (rev (with-temp-file (expand-file-name "html-revision" dir)
-              (or (when (eq (call-process "git" nil t nil
-                                          "rev-parse" "--verify" "HEAD") 0)
-                    (buffer-string))
-                  (princ yas--version (current-buffer)))))
+       (rev "0.9.0-beta")
        (proj-plist
         `(,@(when (fboundp 'org-html-publish-to-html)
               '(:publishing-function org-html-publish-to-html))
