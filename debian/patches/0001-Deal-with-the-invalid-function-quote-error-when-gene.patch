@@ -1,0 +1,21 @@
+From: Alberto Luaces <aluaces@udc.es>
+Date: Fri, 15 May 2015 20:28:06 +0200
+Subject: Deal with the "invalid function: quote" error when generating docs.
+
+---
+ doc/yas-doc-helper.el | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/doc/yas-doc-helper.el b/doc/yas-doc-helper.el
+index d27f777..ab172b6 100755
+--- a/doc/yas-doc-helper.el
++++ b/doc/yas-doc-helper.el
+@@ -135,7 +135,7 @@
+                   (princ yas--version (current-buffer)))))
+        (proj-plist
+         `(,@(when (fboundp 'org-html-publish-to-html)
+-              '(:publishing-function 'org-html-publish-to-html))
++              '(:publishing-function org-html-publish-to-html))
+           :base-directory ,dir :publishing-directory ,dir
+           :html-preamble
+           ,(with-temp-buffer
