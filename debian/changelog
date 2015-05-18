@@ -2,6 +2,10 @@ yasnippet (0.9.0~beta1-1) unstable; urgency=medium
 
   * New upstream release
   * Modernize debian packaging scripts
+  * Updated watch file (Closes: #691385).
+  * Replaced load-path with debian-pkg-add-load-path-item (Closes:
+    #671561).
+  * This module is byte-compiled now (Closes: #672196).
 
  -- Barak A. Pearlmutter <bap@debian.org>  Thu, 14 May 2015 21:20:23 +0100
 
