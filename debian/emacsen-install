@@ -1,0 +1,32 @@
+#!/bin/sh
+# modified from /usr/share/doc/emacsen-common/sample-package-install-foo
+set -e
+
+FLAVOR=$1
+echo install/yasnippet: Handling install of emacsen flavor ${FLAVOR}
+
+byte_compile_options="-batch -f batch-byte-compile"
+elc_dir=/usr/share/${FLAVOR}/site-lisp/yasnippet/
+
+echo install/yasnippet: byte-compiling for ${FLAVOR}
+
+[ -d ${elc_dir} ] || mkdir ${elc_dir}
+
+# Create symlinks to the .el files (see section 6E in debian-emacs
+# polcy).  This makes complation easy, and also allows find-function
+# and find-library to work properly.
+(cd ${elc_dir} && cp -s ../../../emacs/site-lisp/yasnippet/*.el .)
+
+# Byte compile them
+(cd ${elc_dir}
+ set +e
+ ${FLAVOR} ${byte_compile_options} *.el > Install.log 2>&1
+ if test $? -ne 0
+ then
+   cat Install.log
+   exit 1
+ fi
+ set -e
+ gzip -9v Install.log)
+
+exit 0;
