@@ -1,3 +1,10 @@
+yasnippet (0.9.0~beta1-2) unstable; urgency=medium
+
+  * Fix org-mode-based documentation generation when running with sbuild.
+    The system was trying to access unexistent $HOME directory.
+
+ --
+
 yasnippet (0.9.0~beta1-1) unstable; urgency=medium
 
   * New upstream release
