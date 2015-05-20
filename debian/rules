@@ -7,4 +7,4 @@
 	dh $@ --parallel
 
 override_dh_auto_build:
-	emacs -Q -L . --batch -l doc/yas-doc-helper.el -f yas--generate-html-batch
+	HOME=$$(pwd) emacs -Q -L . --batch -l doc/yas-doc-helper.el -f yas--generate-html-batch
