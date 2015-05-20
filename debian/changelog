@@ -6,8 +6,9 @@ yasnippet (0.9.0~beta1-2) unstable; urgency=medium
 
   [ Barak A. Pearlmutter ]
   * Merge additional clauses to prev stanza from Alberto.
+  * Close excremental bug fixed upstream, in prev stanza.
 
- --
+ -- Barak A. Pearlmutter <bap@debian.org>  Wed, 20 May 2015 11:34:25 +0100
 
 yasnippet (0.9.0~beta1-1) unstable; urgency=medium
 
