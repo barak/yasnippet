@@ -11,7 +11,7 @@ yasnippet (0.9.0~beta1-2) unstable; urgency=medium
 
 yasnippet (0.9.0~beta1-1) unstable; urgency=medium
 
-  * New upstream release
+  * New upstream release, with shit missing (Closes: #592645)
   * Modernize debian packaging scripts
   * Updated watch file (Closes: #691385).
   * Replaced load-path with debian-pkg-add-load-path-item (Closes:
