@@ -1,3 +1,9 @@
+yasnippet (0.9.0~beta1-3) unstable; urgency=medium
+
+  * Switch to architecture: all to avoid per-architecture binaries.
+
+ -- Barak A. Pearlmutter <bap@debian.org>  Wed, 27 May 2015 09:23:15 +0100
+
 yasnippet (0.9.0~beta1-2) unstable; urgency=medium
 
   [ Alberto Luaces ]
