@@ -5,6 +5,18 @@ set -e
 FLAVOR=$1
 echo install/yasnippet: Handling install of emacsen flavor ${FLAVOR}
 
+if [ ${FLAVOR} = emacs ]; then exit 0; fi
+
+# Liberally blacklist unsupported emacsen:
+if [ ${FLAVOR} = xemacs19 ]; then exit 0; fi
+if [ ${FLAVOR} = xemacs20 ]; then exit 0; fi
+if [ ${FLAVOR} = xemacs21 ]; then exit 0; fi
+if [ ${FLAVOR} = emacs19 ]; then exit 0; fi
+if [ ${FLAVOR} = emacs20 ]; then exit 0; fi
+if [ ${FLAVOR} = emacs21 ]; then exit 0; fi
+if [ ${FLAVOR} = emacs22 ]; then exit 0; fi
+if [ ${FLAVOR} = emacs23 ]; then exit 0; fi # needs cl-lib
+
 byte_compile_options="-batch -f batch-byte-compile"
 elc_dir=/usr/share/${FLAVOR}/site-lisp/yasnippet/
 
