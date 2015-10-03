@@ -1,3 +1,9 @@
+yasnippet (0.9.0~beta1-5) unstable; urgency=medium
+
+  * Fail to fail when files are overwritten during upgrade (closes: #799667)
+
+ -- Barak A. Pearlmutter <bap@debian.org>  Sat, 03 Oct 2015 12:08:48 +0100
+
 yasnippet (0.9.0~beta1-4) unstable; urgency=medium
 
   * Do not try to install with emacs23 (Closes: #787613)
