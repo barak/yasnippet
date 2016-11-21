@@ -2,15 +2,23 @@ Source: yasnippet
 Section: lisp
 Priority: extra
 Maintainer: Debian Emacs addons team <pkg-emacsen-addons@lists.alioth.debian.org>
-Uploaders: Barak A. Pearlmutter <bap@debian.org>, Alberto Luaces Fernández <aluaces@udc.es>, Sean Whitton <spwhitton@spwhitton.name>
-Build-Depends: debhelper (>= 9), emacs24-nox | emacs-nox | emacs | emacs24
+Uploaders:
+ Barak A. Pearlmutter <bap@debian.org>,
+ Alberto Luaces Fernández <aluaces@udc.es>,
+ Sean Whitton <spwhitton@spwhitton.name>,
+Build-Depends:
+ debhelper (>= 9),
+ emacs24-nox | emacs-nox | emacs | emacs24,
 Standards-Version: 3.9.6
 Homepage: https://github.com/capitaomorte/yasnippet
 
 Package: yasnippet
 Architecture: all
-Depends: emacs | emacsen, ${misc:Depends}
-Recommends: yasnippet-snippets
+Depends:
+ emacs | emacsen,
+ ${misc:Depends},
+Recommends:
+ yasnippet-snippets,
 Description: Template system for Emacs
  YASnippet (yet another snippet extension for Emacs) is a template
  system for Emacs. It allows you to type an abbrevation and
