@@ -1,6 +1,6 @@
 yasnippet (0.11.0-1) UNRELEASED; urgency=medium
 
-  * New upstream release.
+  * New upstream release (Closes: #845061).
   * Adopt package on behalf of pkg-emacsen team.
     This has been approved by the de facto maintainer, Barak A. Pearlmutter.
     - Replace Julián Hernández Gómez with pkg-emacsen team as Maintainer.
