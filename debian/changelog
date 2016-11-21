@@ -6,6 +6,7 @@ yasnippet (0.11.0-1) UNRELEASED; urgency=medium
     - Replace Julián Hernández Gómez with pkg-emacsen team as Maintainer.
     - Add myself as an uploader.
   * Bump debhelper compat & dependency to 10.
+  * Update homepage field.
   * Run wrap-and-sort -abst.
 
  -- Sean Whitton <spwhitton@spwhitton.name>  Sun, 20 Nov 2016 17:42:32 -0700
