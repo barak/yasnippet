@@ -5,6 +5,11 @@ yasnippet (0.11.0-1) UNRELEASED; urgency=medium
     This has been approved by the de facto maintainer, Barak A. Pearlmutter.
     - Replace Julián Hernández Gómez with pkg-emacsen team as Maintainer.
     - Add myself as an uploader.
+  * Convert package to use dh_elpa.
+    - Build 'elpa-yasnippet' binary package.
+    - 'yasnippet' now a transition binary package.
+    - Rewrite d/rules.
+    - Replace build dependency on Emacs with build dependency on dh-elpa.
   * Bump debhelper compat & dependency to 10.
   * Update homepage field.
   * Run wrap-and-sort -abst.

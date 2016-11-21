@@ -1,10 +1,7 @@
 #!/usr/bin/make -f
 
-# Uncomment this to turn on verbose mode.
-# export DH_VERBOSE=1
-
 %:
-	dh $@ --parallel
+	dh $@ --with elpa
 
 override_dh_auto_build:
 	HOME=$$(pwd) emacs -Q -L . --batch -l doc/yas-doc-helper.el -f yas--generate-html-batch

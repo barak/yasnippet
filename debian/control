@@ -8,17 +8,26 @@ Uploaders:
  Sean Whitton <spwhitton@spwhitton.name>,
 Build-Depends:
  debhelper (>= 10),
- emacs24-nox | emacs-nox | emacs | emacs24,
+ dh-elpa,
 Standards-Version: 3.9.6
 Homepage: https://github.com/joaotavora/yasnippet
 
-Package: yasnippet
+Package: elpa-yasnippet
 Architecture: all
 Depends:
- emacs | emacsen,
+ ${elpa:Depends},
  ${misc:Depends},
+Built-Using: ${misc:Built-Using}
 Recommends:
  yasnippet-snippets,
+Enhances:
+ emacs,
+ emacs24,
+ emacs25,
+Breaks:
+ yasnippet (<< 0.11.0),
+Provides:
+ yasnippet,
 Description: Template system for Emacs
  YASnippet (yet another snippet extension for Emacs) is a template
  system for Emacs. It allows you to type an abbrevation and
@@ -26,3 +35,12 @@ Description: Template system for Emacs
  .
  Bundled language templates includes: C, C++, C#, Perl, Python, Ruby,
  SQL, LaTeX, HTML, CSS and more.
+
+Package: yasnippet
+Architecture: all
+Depends:
+ elpa-yasnippet,
+ ${misc:Depends},
+Description: Transition Package, yasnippet to elpa-yasnippet
+ The hello emacs addon has been elpafied.  This dummy package
+ helps ease transition from yasnippet to elpa-yasnippet.
