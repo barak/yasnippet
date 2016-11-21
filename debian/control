@@ -1,8 +1,8 @@
 Source: yasnippet
 Section: lisp
 Priority: extra
-Maintainer: Julián Hernández Gómez <julianhernandez@gmail.com>
-Uploaders: Barak A. Pearlmutter <bap@debian.org>, Alberto Luaces Fernández <aluaces@udc.es>
+Maintainer: Debian Emacs addons team <pkg-emacsen-addons@lists.alioth.debian.org>
+Uploaders: Barak A. Pearlmutter <bap@debian.org>, Alberto Luaces Fernández <aluaces@udc.es>, Sean Whitton <spwhitton@spwhitton.name>
 Build-Depends: debhelper (>= 9), emacs24-nox | emacs-nox | emacs | emacs24
 Standards-Version: 3.9.6
 Homepage: https://github.com/capitaomorte/yasnippet

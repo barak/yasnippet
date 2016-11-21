@@ -1,3 +1,14 @@
+yasnippet (0.11.0-1) UNRELEASED; urgency=medium
+
+  * New upstream release.
+  * Adopt package on behalf of pkg-emacsen team.
+    This has been approved by the de facto maintainer, Barak A. Pearlmutter.
+    - Replace Julián Hernández Gómez with pkg-emacsen team as Maintainer.
+    - Add myself as an uploader.
+  * Run wrap-and-sort -abst.
+
+ -- Sean Whitton <spwhitton@spwhitton.name>  Sun, 20 Nov 2016 17:42:32 -0700
+
 yasnippet (0.9.0~beta1-5) unstable; urgency=medium
 
   * Fail to fail when files are overwritten during upgrade (closes: #799667)
