@@ -11,6 +11,7 @@ Build-Depends:
  dh-elpa,
 Standards-Version: 3.9.6
 Homepage: https://github.com/joaotavora/yasnippet
+Testsuite: autopkgtest-pkg-elpa
 
 Package: elpa-yasnippet
 Architecture: all

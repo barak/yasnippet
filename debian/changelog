@@ -12,6 +12,7 @@ yasnippet (0.11.0-1) UNRELEASED; urgency=medium
     - Replace build dependency on Emacs with build dependency on dh-elpa.
   * Bump debhelper compat & dependency to 10.
   * Update homepage field.
+  * Add Testsuite: field.
   * Run wrap-and-sort -abst.
 
  -- Sean Whitton <spwhitton@spwhitton.name>  Sun, 20 Nov 2016 17:42:32 -0700
