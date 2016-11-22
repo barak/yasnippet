@@ -7,7 +7,7 @@ Subject: Avoiding having git as a building dependency.
  1 file changed, 1 insertion(+), 5 deletions(-)
 
 diff --git a/doc/yas-doc-helper.el b/doc/yas-doc-helper.el
-index ab172b6..6ccbe3d 100755
+index 8459eb7..61059ee 100755
 --- a/doc/yas-doc-helper.el
 +++ b/doc/yas-doc-helper.el
 @@ -128,11 +128,7 @@
