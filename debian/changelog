@@ -10,7 +10,7 @@ yasnippet (0.11.0-1) UNRELEASED; urgency=medium
     - Build 'elpa-yasnippet' binary package.
     - 'yasnippet' now a transition binary package.
     - Rewrite d/rules.
-    - Add d/elpa-yasnippet.elpa control file.
+    - Add d/elpa-yasnippet.elpa & d/elpa-test control files.
     - Replace build dependency on Emacs with build dependency on dh-elpa.
     - Add build dependency on yasnippet-snippets for test suite.
     - Drop debian/emacsen-*.
