@@ -9,7 +9,7 @@ Uploaders:
 Build-Depends:
  debhelper (>= 10),
  dh-elpa,
-Standards-Version: 3.9.6
+Standards-Version: 3.9.8
 Homepage: https://github.com/joaotavora/yasnippet
 Testsuite: autopkgtest-pkg-elpa
 

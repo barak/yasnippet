@@ -19,6 +19,7 @@ yasnippet (0.11.0-1) UNRELEASED; urgency=medium
   * Bump debhelper compat & dependency to 10.
   * Update homepage field.
   * Add Testsuite: field.
+  * Bump standards version to 3.9.8 (no changes required).
   * Run wrap-and-sort -abst.
 
   [ Barak A. Pearlmutter ]
