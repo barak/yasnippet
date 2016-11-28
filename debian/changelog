@@ -36,8 +36,9 @@ yasnippet (0.11.0-1) unstable; urgency=medium
     Merged upstream.
   * Refresh 0002-Avoiding-having-git-as-a-building-dependency.patch
   * Add 0001-typos-and-grammar.patch
-
- -- Sean Whitton <spwhitton@spwhitton.name>  Sun, 27 Nov 2016 23:41:35 -0700
+  * Swizzle debian/watch to github.com/joaotavora/yasnippet/tags
+  
+ -- Barak A. Pearlmutter <bap@debian.org>  Mon, 28 Nov 2016 14:19:31 +0000
 
 yasnippet (0.9.0~beta1-5) unstable; urgency=medium
 
