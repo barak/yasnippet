@@ -9,6 +9,7 @@ Uploaders:
 Build-Depends:
  debhelper (>= 10),
  dh-elpa,
+ emacs-goodies-el,
 Standards-Version: 3.9.8
 Homepage: https://github.com/joaotavora/yasnippet
 Testsuite: autopkgtest-pkg-elpa
