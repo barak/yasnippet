@@ -7,6 +7,7 @@ yasnippet (0.11.0-1) UNRELEASED; urgency=medium
     - Replace Julián Hernández Gómez with pkg-emacsen team as Maintainer.
     - Add myself as an uploader.
     - Add myself to d/copyright file for debian/.
+    - Update copyright years for Barak A. Pearlmutter.
   * Convert package to use dh_elpa (Closes: #671584, #818440).
     - Build 'elpa-yasnippet' binary package.
     - 'yasnippet' now a transition binary package.

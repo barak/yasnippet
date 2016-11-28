@@ -12,7 +12,7 @@ Files: debian/*
 License: GPL-3+
 Copyright: 2009 Julián Hernández Gómez <julianhernandez@gmail.com>
 	   2015 Alberto Luaces <aluaces@udc.es>, Barak A. Pearlmutter <bap@debian.org>
-	   2016 Sean Whitton <spwhitton@spwhitton.name>
+	   2016 Sean Whitton <spwhitton@spwhitton.name>, Barak A. Pearlmutter <bap@debian.org>
 
 License: GPL-3+
     .
