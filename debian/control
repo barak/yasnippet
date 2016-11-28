@@ -46,4 +46,5 @@ Depends:
  ${misc:Depends},
 Description: Transition Package, yasnippet to elpa-yasnippet
  The yasnippet emacs addon has been elpafied.  This dummy package
- helps ease transition from yasnippet to elpa-yasnippet.
+ helps ease transition from yasnippet to elpa-yasnippet, and may
+ safely be removed.
