@@ -153,9 +153,9 @@
   :group 'editing)
 
 (defvar yas-installed-snippets-dir nil)
-(setq yas-installed-snippets-dir
-      (when load-file-name
-        (expand-file-name "snippets" (file-name-directory load-file-name))))
+(let ((snippets-directory "/usr/share/yasnippet-snippets"))
+  (when (file-exists-p snippets-directory)
+    (setq yas-installed-snippets-dir snippets-directory)))
 
 (defconst yas--default-user-snippets-dir
   (expand-file-name "snippets" user-emacs-directory))
@@ -197,7 +197,11 @@ created with `yas-new-snippet'. "
                        (stringp (symbol-value e)))
                   (symbol-value e))
                  (t
-                  (error "[yas] invalid element %s in `yas-snippet-dirs'" e)))))
+                  (error "[yas] invalid element %s in `yas-snippet-dirs'
+
+Perhaps you need to install the yasnippet-snippets Debian package,
+or remove %s from `yas-snippet-dirs'
+before loading yasnippet." e e)))))
 
 (defcustom yas-new-snippet-default "\
 # -*- mode: snippet -*-
