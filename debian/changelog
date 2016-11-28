@@ -17,7 +17,10 @@ yasnippet (0.11.0-1) UNRELEASED; urgency=medium
     - Update doc-base registration.
   * Add 0003-Debian-yas-installed-snippets-dir.patch (Closes: #818699).
   * Add missing build dependency on emacs-goodies-el.
-    Build process requires htmlize.el.
+    The documentation build process can optionally use htmlize.el.  The
+    version of htmlize.el present in emacs-goodies-el is currently too old
+    for this to work, but adding the build dependency now will make this
+    work as soon as emacs-goodies-el is updated.
   * Bump debhelper compat & dependency to 10.
   * Update homepage field.
   * Add Testsuite: field.
