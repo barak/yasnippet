@@ -1,0 +1,7 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@ --with elpa
+
+override_dh_auto_build:
+	HOME=$$(pwd) emacs -Q -L . --batch -l doc/yas-doc-helper.el -f yas--generate-html-batch

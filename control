@@ -1,0 +1,50 @@
+Source: yasnippet
+Section: lisp
+Priority: extra
+Maintainer: Debian Emacs addons team <pkg-emacsen-addons@lists.alioth.debian.org>
+Uploaders:
+ Barak A. Pearlmutter <bap@debian.org>,
+ Alberto Luaces Fernández <aluaces@udc.es>,
+ Sean Whitton <spwhitton@spwhitton.name>,
+Build-Depends:
+ debhelper (>= 10),
+ dh-elpa,
+ emacs-goodies-el,
+ yasnippet-snippets,
+Standards-Version: 3.9.8
+Homepage: https://github.com/joaotavora/yasnippet
+Testsuite: autopkgtest-pkg-elpa
+
+Package: elpa-yasnippet
+Architecture: all
+Depends:
+ ${elpa:Depends},
+ ${misc:Depends},
+Built-Using: ${misc:Built-Using}
+Recommends:
+ yasnippet-snippets,
+Enhances:
+ emacs,
+ emacs24,
+ emacs25,
+Breaks:
+ yasnippet (<< 0.11.0),
+Provides:
+ yasnippet,
+Description: Template system for Emacs
+ YASnippet (yet another snippet extension for Emacs) is a template
+ system for Emacs. It allows you to type an abbreviation and
+ automatically expand the abbreviation into function templates.
+ .
+ Bundled language templates includes: C, C++, C#, Perl, Python, Ruby,
+ SQL, LaTeX, HTML, CSS and more.
+
+Package: yasnippet
+Architecture: all
+Depends:
+ elpa-yasnippet,
+ ${misc:Depends},
+Description: Transition Package, yasnippet to elpa-yasnippet
+ The yasnippet emacs addon has been elpafied.  This dummy package
+ helps ease transition from yasnippet to elpa-yasnippet, and may
+ safely be removed.
