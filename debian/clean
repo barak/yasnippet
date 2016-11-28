@@ -1,1 +1,2 @@
-.org-timestamps
+.org-timestamps/
+doc/*.html
