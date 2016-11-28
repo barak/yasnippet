@@ -16,6 +16,7 @@ yasnippet (0.11.0-1) UNRELEASED; urgency=medium
     - Add debian/yasnippet-startup.el.
       Based on debian/emacsen-startup, altered to use `with-eval-after-load'
       rather than unconditionally loading yasnippet.
+    - Update doc-base registration.
   * Bump debhelper compat & dependency to 10.
   * Update homepage field.
   * Add Testsuite: field.
