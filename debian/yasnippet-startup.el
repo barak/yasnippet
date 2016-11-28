@@ -8,4 +8,4 @@
   ;; Guard loading snippets directory because it lives in another package:
   (let ((snippets-directory "/usr/share/yasnippet-snippets"))
     (if (file-exists-p snippets-directory)
-        (yas-load-directory "/usr/share/yasnippet-snippets"))))
+        (yas-load-directory snippets-directory))))
