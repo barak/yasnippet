@@ -1,0 +1,102 @@
+yasnippet (0.11.0-1) unstable; urgency=medium
+
+  [ Sean Whitton ]
+  * New upstream release (Closes: #845061).
+  * Adopt package on behalf of pkg-emacsen team.
+    This has been approved by the de facto maintainer, Barak A. Pearlmutter.
+    - Replace Julián Hernández Gómez with pkg-emacsen team as Maintainer.
+    - Add myself as an uploader.
+    - Add myself to d/copyright file for debian/.
+    - Update copyright years for Barak A. Pearlmutter.
+  * Convert package to use dh_elpa (Closes: #671584, #818440).
+    - Build 'elpa-yasnippet' binary package.
+    - 'yasnippet' now a transition binary package.
+    - Rewrite d/rules.
+    - Add d/elpa-yasnippet.elpa & d/elpa-test control files.
+    - Replace build dependency on Emacs with build dependency on dh-elpa.
+    - Add build dependency on yasnippet-snippets for test suite.
+    - Drop debian/emacsen-*.
+    - Update doc-base registration.
+  * Add 0003-Debian-yas-installed-snippets-dir.patch (Closes: #818699).
+  * Add missing build dependency on emacs-goodies-el.
+    The documentation build process can optionally use htmlize.el.  The
+    version of htmlize.el present in emacs-goodies-el is currently too old
+    for this to work, but adding the build dependency now will make this
+    work as soon as emacs-goodies-el is updated.
+  * Bump debhelper compat & dependency to 10.
+  * Update homepage field.
+  * Add Testsuite: field.
+  * Fix typo in package description.
+  * Add debian/clean.
+  * Bump standards version to 3.9.8 (no changes required).
+  * Run wrap-and-sort -abst.
+
+  [ Barak A. Pearlmutter ]
+  * Drop 0001-Deal-with-the-invalid-function-quote-error-when-gene.patch
+    Merged upstream.
+  * Refresh 0002-Avoiding-having-git-as-a-building-dependency.patch
+  * Add 0001-typos-and-grammar.patch
+  * Swizzle debian/watch to github.com/joaotavora/yasnippet/tags
+  
+ -- Barak A. Pearlmutter <bap@debian.org>  Mon, 28 Nov 2016 14:19:31 +0000
+
+yasnippet (0.9.0~beta1-5) unstable; urgency=medium
+
+  * Fail to fail when files are overwritten during upgrade (closes: #799667)
+
+ -- Barak A. Pearlmutter <bap@debian.org>  Sat, 03 Oct 2015 12:08:48 +0100
+
+yasnippet (0.9.0~beta1-4) unstable; urgency=medium
+
+  * Do not try to install with emacs23 (Closes: #787613)
+
+ -- Barak A. Pearlmutter <bap@debian.org>  Sun, 14 Jun 2015 22:48:34 +0100
+
+yasnippet (0.9.0~beta1-3) unstable; urgency=medium
+
+  * Switch to architecture: all to avoid per-architecture binaries.
+
+ -- Barak A. Pearlmutter <bap@debian.org>  Wed, 27 May 2015 09:23:15 +0100
+
+yasnippet (0.9.0~beta1-2) unstable; urgency=medium
+
+  [ Alberto Luaces ]
+  * Fix org-mode-based documentation generation when running with sbuild.
+    The system was trying to access unexistent $HOME directory.
+
+  [ Barak A. Pearlmutter ]
+  * Merge additional clauses to prev stanza from Alberto.
+  * Close excremental bug fixed upstream, in prev stanza.
+
+ -- Barak A. Pearlmutter <bap@debian.org>  Wed, 20 May 2015 11:34:25 +0100
+
+yasnippet (0.9.0~beta1-1) unstable; urgency=medium
+
+  * New upstream release, with shit missing (Closes: #592645)
+  * Modernize debian packaging scripts
+  * Updated watch file (Closes: #691385).
+  * Replaced load-path with debian-pkg-add-load-path-item (Closes:
+    #671561).
+  * This module is byte-compiled now (Closes: #672196).
+
+ -- Barak A. Pearlmutter <bap@debian.org>  Thu, 14 May 2015 21:20:23 +0100
+
+yasnippet (0.6.1c-1) unstable; urgency=low
+
+  * New upstream release
+  * Bump Standards-Version from 3.8.0 to 3.8.4 (no changes needed).
+  * Switch to dpkg-source 3.0 (quilt) format
+  * Changed Section to lisp to match override
+  * Depend on emacs instead of emacs22
+  * Remove python-docutils and python-pygments from build-deps
+  * Updated Copyright information
+  * Added doc-base control file
+  * Added watch file
+
+ -- Julián Hernández Gómez <julianhernandez@gmail.com>  Fri, 26 Feb 2010 10:34:33 +0800
+
+yasnippet (0.5.10-1) unstable; urgency=low
+
+  * Initial release. (Closes: #517948, #484465)
+
+ -- Julián Hernández Gómez <julianhernandez@gmail.com>  Fri, 27 Feb 2009 13:47:00 +0800

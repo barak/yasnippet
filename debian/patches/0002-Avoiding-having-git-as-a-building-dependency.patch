@@ -1,0 +1,25 @@
+From: Alberto Luaces <aluaces@udc.es>
+Date: Fri, 15 May 2015 20:28:25 +0200
+Subject: Avoiding having git as a building dependency.
+
+---
+ doc/yas-doc-helper.el | 6 +-----
+ 1 file changed, 1 insertion(+), 5 deletions(-)
+
+diff --git a/doc/yas-doc-helper.el b/doc/yas-doc-helper.el
+index 8459eb7..61059ee 100755
+--- a/doc/yas-doc-helper.el
++++ b/doc/yas-doc-helper.el
+@@ -128,11 +128,7 @@
+ 
+ (let* ((dir (if load-file-name (file-name-directory load-file-name)
+               default-directory))
+-       (rev (with-temp-file (expand-file-name "html-revision" dir)
+-              (or (when (eq (call-process "git" nil t nil
+-                                          "rev-parse" "--verify" "HEAD") 0)
+-                    (buffer-string))
+-                  (princ yas--version (current-buffer)))))
++       (rev "0.9.0-beta")
+        (proj-plist
+         `(,@(when (fboundp 'org-html-publish-to-html)
+               '(:publishing-function org-html-publish-to-html))
