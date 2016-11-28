@@ -1,0 +1,28 @@
+From: Sean Whitton <spwhitton@spwhitton.name>
+Date: Sun, 27 Nov 2016 22:05:41 -0700
+Subject: Debian-yas-installed-snippets-dir
+
+This replaces the old emacsen-startup script.
+
+Forwarded: not-needed
+---
+ yasnippet.el | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/yasnippet.el b/yasnippet.el
+index a6977d1..63ac003 100644
+--- a/yasnippet.el
++++ b/yasnippet.el
+@@ -153,9 +153,9 @@
+   :group 'editing)
+ 
+ (defvar yas-installed-snippets-dir nil)
+-(setq yas-installed-snippets-dir
+-      (when load-file-name
+-        (expand-file-name "snippets" (file-name-directory load-file-name))))
++(let ((snippets-directory "/usr/share/yasnippet-snippets"))
++  (when (file-exists-p snippets-directory)
++    (setq yas-installed-snippets-dir snippets-directory)))
+ 
+ (defconst yas--default-user-snippets-dir
+   (expand-file-name "snippets" user-emacs-directory))
