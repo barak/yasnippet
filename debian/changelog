@@ -1,3 +1,9 @@
+yasnippet (0.11.0-2) UNRELEASED; urgency=medium
+
+  * Add missing Vcs-* fields.
+
+ -- Sean Whitton <spwhitton@spwhitton.name>  Wed, 30 Nov 2016 14:40:38 -0700
+
 yasnippet (0.11.0-1) unstable; urgency=medium
 
   [ Sean Whitton ]
