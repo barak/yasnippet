@@ -1,3 +1,9 @@
+yasnippet (0.11.0-3) UNRELEASED; urgency=medium
+
+  * Add Forwarded: header to 0001-typos-and-grammar.patch
+
+ -- Sean Whitton <spwhitton@spwhitton.name>  Sat, 10 Dec 2016 20:04:34 -0700
+
 yasnippet (0.11.0-2) unstable; urgency=medium
 
   * Add missing Vcs-* fields.

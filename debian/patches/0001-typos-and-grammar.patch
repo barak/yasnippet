@@ -2,6 +2,7 @@ From: "Barak A. Pearlmutter" <barak+git@pearlmutter.net>
 Date: Mon, 12 Oct 2015 19:29:44 +0100
 Subject: typos and grammar
 
+Forwarded: https://github.com/joaotavora/yasnippet/pull/758
 ---
  doc/faq.org | 18 +++++++++---------
  1 file changed, 9 insertions(+), 9 deletions(-)
