@@ -3,6 +3,8 @@ yasnippet (0.12.1-1) UNRELEASED; urgency=medium
   * New upstream release.
   * Drop 0001-typos-and-grammar.patch
     Merged upstream.
+  * Drop 0002-Avoiding-having-git-as-a-building-dependency.patch
+    Obsoleted by upstream's switch to use SOURCE_DATE_EPOCH.
 
  -- Sean Whitton <spwhitton@spwhitton.name>  Mon, 24 Jul 2017 15:07:37 -0700
 
