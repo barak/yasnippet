@@ -1,8 +1,10 @@
-yasnippet (0.11.0-3) UNRELEASED; urgency=medium
+yasnippet (0.12.1-1) UNRELEASED; urgency=medium
 
-  * Add Forwarded: header to 0001-typos-and-grammar.patch
+  * New upstream release.
+  * Drop 0001-typos-and-grammar.patch
+    Merged upstream.
 
- -- Sean Whitton <spwhitton@spwhitton.name>  Sat, 10 Dec 2016 20:04:34 -0700
+ -- Sean Whitton <spwhitton@spwhitton.name>  Mon, 24 Jul 2017 15:07:37 -0700
 
 yasnippet (0.11.0-2) unstable; urgency=medium
 
