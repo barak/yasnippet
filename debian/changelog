@@ -1,4 +1,4 @@
-yasnippet (0.12.1-1) UNRELEASED; urgency=medium
+yasnippet (0.12.1-1) unstable; urgency=medium
 
   * New upstream release (Closes: #771159).
   * Drop 0001-typos-and-grammar.patch
@@ -10,7 +10,7 @@ yasnippet (0.12.1-1) UNRELEASED; urgency=medium
     Merged upstream.
   * Bump standards version to 4.0.0 (no changes required).
 
- -- Sean Whitton <spwhitton@spwhitton.name>  Mon, 24 Jul 2017 15:07:37 -0700
+ -- Sean Whitton <spwhitton@spwhitton.name>  Mon, 24 Jul 2017 15:18:42 -0700
 
 yasnippet (0.11.0-2) unstable; urgency=medium
 
