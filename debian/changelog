@@ -1,6 +1,6 @@
 yasnippet (0.12.1-1) UNRELEASED; urgency=medium
 
-  * New upstream release.
+  * New upstream release (Closes: #771159).
   * Drop 0001-typos-and-grammar.patch
     Merged upstream.
   * Drop 0002-Avoiding-having-git-as-a-building-dependency.patch
