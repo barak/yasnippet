@@ -8,6 +8,7 @@ yasnippet (0.12.1-1) UNRELEASED; urgency=medium
   * Refresh 0003-Debian-yas-installed-snippets-dir.patch
   * Drop 0004-no-timestamp-in-html-head.patch
     Merged upstream.
+  * Bump standards version to 4.0.0 (no changes required).
 
  -- Sean Whitton <spwhitton@spwhitton.name>  Mon, 24 Jul 2017 15:07:37 -0700
 
