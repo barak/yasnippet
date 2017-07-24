@@ -9,24 +9,21 @@ Forwarded: not-needed
  yasnippet.el | 12 ++++++++----
  1 file changed, 8 insertions(+), 4 deletions(-)
 
-diff --git a/yasnippet.el b/yasnippet.el
-index a6977d1..22477cc 100644
 --- a/yasnippet.el
 +++ b/yasnippet.el
-@@ -153,9 +153,9 @@
-   :group 'editing)
+@@ -158,8 +158,9 @@
+   "Directory that yasnippet was loaded from.")
  
  (defvar yas-installed-snippets-dir nil)
 -(setq yas-installed-snippets-dir
--      (when load-file-name
--        (expand-file-name "snippets" (file-name-directory load-file-name))))
+-      (expand-file-name "snippets" yas--loaddir))
 +(let ((snippets-directory "/usr/share/yasnippet-snippets"))
 +  (when (file-exists-p snippets-directory)
 +    (setq yas-installed-snippets-dir snippets-directory)))
  
  (defconst yas--default-user-snippets-dir
    (expand-file-name "snippets" user-emacs-directory))
-@@ -197,7 +197,11 @@ created with `yas-new-snippet'. "
+@@ -201,7 +202,11 @@ created with `yas-new-snippet'. "
                         (stringp (symbol-value e)))
                    (symbol-value e))
                   (t

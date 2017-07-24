@@ -5,6 +5,9 @@ yasnippet (0.12.1-1) UNRELEASED; urgency=medium
     Merged upstream.
   * Drop 0002-Avoiding-having-git-as-a-building-dependency.patch
     Obsoleted by upstream's switch to use SOURCE_DATE_EPOCH.
+  * Refresh 0003-Debian-yas-installed-snippets-dir.patch
+  * Drop 0004-no-timestamp-in-html-head.patch
+    Merged upstream.
 
  -- Sean Whitton <spwhitton@spwhitton.name>  Mon, 24 Jul 2017 15:07:37 -0700
 
