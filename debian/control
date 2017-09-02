@@ -11,6 +11,8 @@ Build-Depends:
  dh-elpa,
  emacs-goodies-el,
  yasnippet-snippets,
+# see https://github.com/joaotavora/yasnippet/issues/852
+Build-Conflicts: elpa-org
 Standards-Version: 4.0.0
 Homepage: https://github.com/joaotavora/yasnippet
 Testsuite: autopkgtest-pkg-elpa
