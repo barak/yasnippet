@@ -3,8 +3,9 @@ yasnippet (0.12.2-2) unstable; urgency=medium
   * Remove obsolete conffile /etc/emacs/site-start.d/50yasnippet.el
     (Closes: #884621).
     Thanks H.-Dirk Schmitt for noting the problem.
+  * Priority extra->optional.
 
- -- Sean Whitton <spwhitton@spwhitton.name>  Fri, 22 Dec 2017 08:52:06 +0000
+ -- Sean Whitton <spwhitton@spwhitton.name>  Fri, 22 Dec 2017 09:00:30 +0000
 
 yasnippet (0.12.2-1) unstable; urgency=medium
 
