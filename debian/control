@@ -13,7 +13,7 @@ Build-Depends:
  yasnippet-snippets,
 # see https://github.com/joaotavora/yasnippet/issues/852
 Build-Conflicts: elpa-org
-Standards-Version: 4.1.0
+Standards-Version: 4.1.2
 Homepage: https://github.com/joaotavora/yasnippet
 Testsuite: autopkgtest-pkg-elpa
 Vcs-Git: https://anonscm.debian.org/git/pkg-emacsen/pkg/yasnippet.git
