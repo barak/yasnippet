@@ -10,7 +10,6 @@ Build-Depends:
  debhelper (>= 10),
  dh-elpa,
  emacs-goodies-el,
- yasnippet-snippets,
 # see https://github.com/joaotavora/yasnippet/issues/852
 Build-Conflicts: elpa-org
 Standards-Version: 4.1.2
