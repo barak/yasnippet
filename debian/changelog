@@ -1,5 +1,6 @@
 yasnippet (0.12.2-3) UNRELEASED; urgency=medium
 
+  * Team upload.
   * Drop 0003-Debian-yas-installed-snippets-dir.patch
     - Uses obsolete yas-installed-snippets-dir.
     - Elpa-yasnippets-snippets now sets yasnippet-snippets-dir.
