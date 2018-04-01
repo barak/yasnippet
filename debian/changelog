@@ -6,11 +6,11 @@ yasnippet (0.12.2-3) UNRELEASED; urgency=medium
     - Elpa-yasnippets-snippets now sets yasnippet-snippets-dir.
   * debian/control: Drop yasnippet-snippets from Build-Depends
     - Not needed for self-test to pass.
-  * Use current Debian Emacsen Team standards
-    - debian/control: Drop Built-Using.
-  * Switch Vcs from alioth to salsa
-  * Declare Standards-Version: 4.1.3. (no changes needed)
-
+  * Switch Vcs from alioth to salsa.
+  * Declare Standards-Version: 4.1.3.
+     - debian/control: Drop Built-Using because §7.8 says it should be used
+       "exactly when there are license or DFSG requirements to retain full
+        source code"
  -- Nicholas D Steeves <nsteeves@gmail.com>  Fri, 23 Mar 2018 18:10:59 -0400
 
 yasnippet (0.12.2-2) unstable; urgency=medium
