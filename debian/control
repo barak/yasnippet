@@ -7,7 +7,7 @@ Uploaders:
  Alberto Luaces Fernández <aluaces@udc.es>,
  Sean Whitton <spwhitton@spwhitton.name>,
 Build-Depends:
- debhelper (>= 10),
+ debhelper (>= 11~),
  dh-elpa,
  emacs-goodies-el,
 # see https://github.com/joaotavora/yasnippet/issues/852
