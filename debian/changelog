@@ -7,11 +7,15 @@ yasnippet (0.12.2-3) UNRELEASED; urgency=medium
   * debian/control: Drop yasnippet-snippets from Build-Depends
     - Not needed for self-test to pass.
   * Switch Vcs from alioth to salsa.
-  * Declare Standards-Version: 4.1.3.
+  * Declare Standards-Version: 4.1.4.
      - debian/control: Drop Built-Using because §7.8 says it should be used
        "exactly when there are license or DFSG requirements to retain full
-        source code"
- -- Nicholas D Steeves <nsteeves@gmail.com>  Fri, 23 Mar 2018 18:10:59 -0400
+        source code".
+  * Change section to editors. (permitted since lintian 2.5.69)
+  * Switch to debhelper 11.
+  * Declare compat level 11.
+
+ -- Nicholas D Steeves <nsteeves@gmail.com>  Thu, 12 Apr 2018 16:33:54 -0400
 
 yasnippet (0.12.2-2) unstable; urgency=medium
 
