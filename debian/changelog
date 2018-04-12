@@ -11,7 +11,7 @@ yasnippet (0.12.2-3) UNRELEASED; urgency=medium
      - debian/control: Drop Built-Using because §7.8 says it should be used
        "exactly when there are license or DFSG requirements to retain full
         source code".
-  * Change section to editors. (permitted since lintian 2.5.69)
+  * Change section to editors, which is more accurate and discoverable.
   * Switch to debhelper 11.
   * Declare compat level 11.
 
