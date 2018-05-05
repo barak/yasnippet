@@ -15,6 +15,7 @@ yasnippet (0.12.2-3~) UNRELEASED; urgency=medium
   * Switch to debhelper 11.
   * Declare compat level 11.
   * Update Maintainer team name and email address.
+  * Recommend elpa-yasnippet-snippets rather than yasnippet-snippets.
 
  -- Nicholas D Steeves <nsteeves@gmail.com>  Sat, 05 May 2018 14:57:51 -0400
 

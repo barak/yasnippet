@@ -24,7 +24,7 @@ Depends:
  ${elpa:Depends},
  ${misc:Depends},
 Recommends:
- yasnippet-snippets,
+ elpa-yasnippet-snippets,
 Enhances:
  emacs,
  emacs24,
