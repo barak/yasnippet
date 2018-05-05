@@ -1,4 +1,4 @@
-yasnippet (0.12.2-3) UNRELEASED; urgency=medium
+yasnippet (0.12.2-3~) UNRELEASED; urgency=medium
 
   * Team upload.
   * Drop 0003-Debian-yas-installed-snippets-dir.patch
@@ -14,8 +14,9 @@ yasnippet (0.12.2-3) UNRELEASED; urgency=medium
   * Change section to editors, which is more accurate and discoverable.
   * Switch to debhelper 11.
   * Declare compat level 11.
+  * Update Maintainer team name and email address.
 
- -- Nicholas D Steeves <nsteeves@gmail.com>  Thu, 12 Apr 2018 16:33:54 -0400
+ -- Nicholas D Steeves <nsteeves@gmail.com>  Sat, 05 May 2018 14:57:51 -0400
 
 yasnippet (0.12.2-2) unstable; urgency=medium
 
