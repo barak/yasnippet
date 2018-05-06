@@ -1,21 +1,22 @@
 yasnippet (0.12.2-3~) UNRELEASED; urgency=medium
 
   * Team upload.
+  * Recommend elpa-yasnippet-snippets rather than yasnippet-snippets.
   * Drop 0003-Debian-yas-installed-snippets-dir.patch
     - Uses obsolete yas-installed-snippets-dir.
     - Elpa-yasnippets-snippets now sets yasnippet-snippets-dir.
   * debian/control: Drop yasnippet-snippets from Build-Depends
-    - Not needed for self-test to pass.
+    - Does not seem to be needed for self-tests to pass.
   * Switch Vcs from alioth to salsa.
   * Declare Standards-Version: 4.1.4.
      - debian/control: Drop Built-Using because §7.8 says it should be used
        "exactly when there are license or DFSG requirements to retain full
-        source code".
-  * Change section to editors, which is more accurate and discoverable.
+        source code", and such requirements are not present in yasnippet.
+  * Change section to editors; it is more accurate, because this package
+    augments the interactive user experience is not simply a lisp library.
   * Switch to debhelper 11.
   * Declare compat level 11.
   * Update Maintainer team name and email address.
-  * Recommend elpa-yasnippet-snippets rather than yasnippet-snippets.
 
  -- Nicholas D Steeves <nsteeves@gmail.com>  Sat, 05 May 2018 14:57:51 -0400
 
