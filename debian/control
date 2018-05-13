@@ -27,7 +27,6 @@ Recommends:
  elpa-yasnippet-snippets,
 Enhances:
  emacs,
- emacs24,
  emacs25,
 Breaks:
  yasnippet (<< 0.11.0),
