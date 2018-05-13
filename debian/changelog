@@ -13,8 +13,6 @@ yasnippet (0.13.0-1~) UNRELEASED; urgency=medium
      - debian/control: Drop Built-Using because §7.8 says it should be used
        "exactly when there are license or DFSG requirements to retain full
         source code", and such requirements are not present in yasnippet.
-  * Change section to editors; it is more accurate, because this package
-    augments the interactive user experience is not simply a lisp library.
   * Switch to debhelper 11.
   * Declare compat level 11.
   * Update Maintainer team name and email address.

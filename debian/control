@@ -1,5 +1,5 @@
 Source: yasnippet
-Section: editors
+Section: lisp
 Priority: optional
 Maintainer: Debian Emacsen team <debian-emacsen@lists.debian.org>
 Uploaders:
