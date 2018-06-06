@@ -9,7 +9,7 @@ Uploaders:
 Build-Depends:
  debhelper (>= 11~),
  dh-elpa,
- emacs-goodies-el,
+ elpa-htmlize,
 # see https://github.com/joaotavora/yasnippet/issues/852
 Build-Conflicts: elpa-org
 Standards-Version: 4.1.4
