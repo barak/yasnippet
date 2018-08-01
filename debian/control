@@ -13,7 +13,7 @@ Build-Depends:
  elpa-htmlize,
 # see https://github.com/joaotavora/yasnippet/issues/852
 Build-Conflicts: elpa-org
-Standards-Version: 4.1.4
+Standards-Version: 4.1.5
 Homepage: https://github.com/joaotavora/yasnippet
 Testsuite: autopkgtest-pkg-elpa
 Vcs-Browser: https://salsa.debian.org/emacsen-team/yasnippet
