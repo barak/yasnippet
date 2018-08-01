@@ -1,7 +1,7 @@
 yasnippet (0.13.0-2) UNRELEASED; urgency=medium
 
+  * Team upload.
   * Depend on elpa-htmlize instead of emacs-goodies-el. (Closes: #898579)
-  * Add myself to uploaders.
   * Lowercase short descriptions
   * Declare Standards-Version: 4.1.5. (No additional changes needed)
 
