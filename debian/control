@@ -6,6 +6,7 @@ Uploaders:
  Barak A. Pearlmutter <bap@debian.org>,
  Alberto Luaces Fernández <aluaces@udc.es>,
  Sean Whitton <spwhitton@spwhitton.name>,
+ Nicholas D Steeves <nsteeves@gmail.com>
 Build-Depends:
  debhelper (>= 11~),
  dh-elpa,
