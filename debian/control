@@ -33,7 +33,7 @@ Breaks:
  yasnippet (<< 0.11.0),
 Provides:
  yasnippet,
-Description: Template system for Emacs
+Description: template system for Emacs
  YASnippet (yet another snippet extension for Emacs) is a template
  system for Emacs. It allows you to type an abbreviation and
  automatically expand the abbreviation into function templates.
@@ -46,7 +46,7 @@ Architecture: all
 Depends:
  elpa-yasnippet,
  ${misc:Depends},
-Description: Transition Package, yasnippet to elpa-yasnippet
+Description: transition Package, yasnippet to elpa-yasnippet
  The yasnippet emacs addon has been elpafied.  This dummy package
  helps ease transition from yasnippet to elpa-yasnippet, and may
  safely be removed.
