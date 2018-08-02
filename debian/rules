@@ -1,0 +1,7 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@ --with elpa
+
+override_dh_auto_build:
+	HOME=$$(pwd) emacs -Q -L /usr/share/emacs/site-lisp/elpa-src/htmlize-* -L . --batch -l htmlize -l doc/yas-doc-helper.el -f yas--generate-html-batch

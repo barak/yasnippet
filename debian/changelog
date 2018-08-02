@@ -1,0 +1,183 @@
+yasnippet (0.13.0-2) unstable; urgency=medium
+
+  * Team upload.
+  * Depend on elpa-htmlize instead of emacs-goodies-el. (Closes: #898579)
+  * Lowercase short descriptions
+  * Declare Standards-Version: 4.1.5. (No additional changes needed)
+  * debian/rules: Load htmlize before attempting to build docs.
+    - Needed to fontify src blocks.
+  * Restore build-dep on yasnippet-snippets for self-tests.
+    - Solves "Prepared just-in-time loading of snippets
+      (but no snippets found)"
+    - While it is not needed for tests to pass, elpa-yasnippet-snippets
+      enhances the quality of those tests.
+  * debian/control: Add minor enhancements to the comments.
+
+ -- Nicholas D Steeves <nsteeves@gmail.com>  Wed, 01 Aug 2018 22:10:25 -0400
+
+yasnippet (0.13.0-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * debian/control:
+    - Recommend elpa-yasnippet-snippets rather than yasnippet-snippets.
+    - Drop yasnippet-snippets from Build-Depends; it does not seem to be
+      needed for self-tests to pass.
+    - Switch Vcs from alioth to salsa.
+    - Switch to debhelper 11.
+    - Update Maintainer team name and email address.
+    - Drop emacs24 from Enhances.
+  * Declare compat level 11.
+  * Drop 0003-Debian-yas-installed-snippets-dir.patch
+    - Uses obsolete yas-installed-snippets-dir.
+    - Now elpa-yasnippets-snippets defines yasnippet-snippets-dir.
+  * Declare Standards-Version: 4.1.4.
+    - debian/control: Drop Built-Using because §7.8 says it should be used
+      "exactly when there are license or DFSG requirements to retain full
+      source code", and such requirements are not present in yasnippet.
+
+ -- Nicholas D Steeves <nsteeves@gmail.com>  Sun, 13 May 2018 15:22:01 -0400
+
+yasnippet (0.12.2-2) unstable; urgency=medium
+
+  * Remove obsolete conffile /etc/emacs/site-start.d/50yasnippet.el
+    (Closes: #884621).
+    Thanks H.-Dirk Schmitt for noting the problem.
+  * Priority extra->optional.
+  * Declare compliance with Debian Policy 4.1.2.
+
+ -- Sean Whitton <spwhitton@spwhitton.name>  Fri, 22 Dec 2017 10:07:25 +0000
+
+yasnippet (0.12.2-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Tidy Copyright: fields & bump copyright years.
+  * Add a build-conflict with elpa-org.
+    See https://github.com/joaotavora/yasnippet/issues/852
+  * Bump std-ver to 4.1.0 (no changes required).
+
+ -- Sean Whitton <spwhitton@spwhitton.name>  Sat, 02 Sep 2017 13:21:36 -0700
+
+yasnippet (0.12.1-1) unstable; urgency=medium
+
+  * New upstream release (Closes: #771159).
+  * Drop 0001-typos-and-grammar.patch
+    Merged upstream.
+  * Drop 0002-Avoiding-having-git-as-a-building-dependency.patch
+    Obsoleted by upstream's switch to use SOURCE_DATE_EPOCH.
+  * Refresh 0003-Debian-yas-installed-snippets-dir.patch
+  * Drop 0004-no-timestamp-in-html-head.patch
+    Merged upstream.
+  * Bump standards version to 4.0.0 (no changes required).
+
+ -- Sean Whitton <spwhitton@spwhitton.name>  Mon, 24 Jul 2017 15:18:42 -0700
+
+yasnippet (0.11.0-2) unstable; urgency=medium
+
+  * Add missing Vcs-* fields.
+  * Add 0004-no-timestamp-in-html-head.patch for a reproducible build.
+
+ -- Sean Whitton <spwhitton@spwhitton.name>  Fri, 09 Dec 2016 21:38:44 -0700
+
+yasnippet (0.11.0-1) unstable; urgency=medium
+
+  [ Sean Whitton ]
+  * New upstream release (Closes: #845061).
+  * Adopt package on behalf of pkg-emacsen team.
+    This has been approved by the de facto maintainer, Barak A. Pearlmutter.
+    - Replace Julián Hernández Gómez with pkg-emacsen team as Maintainer.
+    - Add myself as an uploader.
+    - Add myself to d/copyright file for debian/.
+    - Update copyright years for Barak A. Pearlmutter.
+  * Convert package to use dh_elpa (Closes: #671584, #818440).
+    - Build 'elpa-yasnippet' binary package.
+    - 'yasnippet' now a transition binary package.
+    - Rewrite d/rules.
+    - Add d/elpa-yasnippet.elpa & d/elpa-test control files.
+    - Replace build dependency on Emacs with build dependency on dh-elpa.
+    - Add build dependency on yasnippet-snippets for test suite.
+    - Drop debian/emacsen-*.
+    - Update doc-base registration.
+  * Add 0003-Debian-yas-installed-snippets-dir.patch (Closes: #818699).
+  * Add missing build dependency on emacs-goodies-el.
+    The documentation build process can optionally use htmlize.el.  The
+    version of htmlize.el present in emacs-goodies-el is currently too old
+    for this to work, but adding the build dependency now will make this
+    work as soon as emacs-goodies-el is updated.
+  * Bump debhelper compat & dependency to 10.
+  * Update homepage field.
+  * Add Testsuite: field.
+  * Fix typo in package description.
+  * Add debian/clean.
+  * Bump standards version to 3.9.8 (no changes required).
+  * Run wrap-and-sort -abst.
+
+  [ Barak A. Pearlmutter ]
+  * Drop 0001-Deal-with-the-invalid-function-quote-error-when-gene.patch
+    Merged upstream.
+  * Refresh 0002-Avoiding-having-git-as-a-building-dependency.patch
+  * Add 0001-typos-and-grammar.patch
+  * Swizzle debian/watch to github.com/joaotavora/yasnippet/tags
+  
+ -- Barak A. Pearlmutter <bap@debian.org>  Mon, 28 Nov 2016 14:19:31 +0000
+
+yasnippet (0.9.0~beta1-5) unstable; urgency=medium
+
+  * Fail to fail when files are overwritten during upgrade (closes: #799667)
+
+ -- Barak A. Pearlmutter <bap@debian.org>  Sat, 03 Oct 2015 12:08:48 +0100
+
+yasnippet (0.9.0~beta1-4) unstable; urgency=medium
+
+  * Do not try to install with emacs23 (Closes: #787613)
+
+ -- Barak A. Pearlmutter <bap@debian.org>  Sun, 14 Jun 2015 22:48:34 +0100
+
+yasnippet (0.9.0~beta1-3) unstable; urgency=medium
+
+  * Switch to architecture: all to avoid per-architecture binaries.
+
+ -- Barak A. Pearlmutter <bap@debian.org>  Wed, 27 May 2015 09:23:15 +0100
+
+yasnippet (0.9.0~beta1-2) unstable; urgency=medium
+
+  [ Alberto Luaces ]
+  * Fix org-mode-based documentation generation when running with sbuild.
+    The system was trying to access unexistent $HOME directory.
+
+  [ Barak A. Pearlmutter ]
+  * Merge additional clauses to prev stanza from Alberto.
+  * Close excremental bug fixed upstream, in prev stanza.
+
+ -- Barak A. Pearlmutter <bap@debian.org>  Wed, 20 May 2015 11:34:25 +0100
+
+yasnippet (0.9.0~beta1-1) unstable; urgency=medium
+
+  * New upstream release, with shit missing (Closes: #592645)
+  * Modernize debian packaging scripts
+  * Updated watch file (Closes: #691385).
+  * Replaced load-path with debian-pkg-add-load-path-item (Closes:
+    #671561).
+  * This module is byte-compiled now (Closes: #672196).
+
+ -- Barak A. Pearlmutter <bap@debian.org>  Thu, 14 May 2015 21:20:23 +0100
+
+yasnippet (0.6.1c-1) unstable; urgency=low
+
+  * New upstream release
+  * Bump Standards-Version from 3.8.0 to 3.8.4 (no changes needed).
+  * Switch to dpkg-source 3.0 (quilt) format
+  * Changed Section to lisp to match override
+  * Depend on emacs instead of emacs22
+  * Remove python-docutils and python-pygments from build-deps
+  * Updated Copyright information
+  * Added doc-base control file
+  * Added watch file
+
+ -- Julián Hernández Gómez <julianhernandez@gmail.com>  Fri, 26 Feb 2010 10:34:33 +0800
+
+yasnippet (0.5.10-1) unstable; urgency=low
+
+  * Initial release. (Closes: #517948, #484465)
+
+ -- Julián Hernández Gómez <julianhernandez@gmail.com>  Fri, 27 Feb 2009 13:47:00 +0800
