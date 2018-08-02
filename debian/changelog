@@ -11,6 +11,7 @@ yasnippet (0.13.0-2) unstable; urgency=medium
       (but no snippets found)"
     - While it is not needed for tests to pass, elpa-yasnippet-snippets
       enhances the quality of those tests.
+  * debian/control: Add minor enhancements to the comments.
 
  -- Nicholas D Steeves <nsteeves@gmail.com>  Wed, 01 Aug 2018 16:44:25 -0400
 

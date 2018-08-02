@@ -11,6 +11,8 @@ Build-Depends:
  dh-elpa,
  elpa-htmlize,
  elpa-yasnippet-snippets
+# See changelog entry 0.13.0-2 for why we build-depend on snippets.
+# For an explanation of the build conflict on elpa-org,
 # see https://github.com/joaotavora/yasnippet/issues/852
 Build-Conflicts: elpa-org
 Standards-Version: 4.1.5
