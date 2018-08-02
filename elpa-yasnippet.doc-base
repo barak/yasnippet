@@ -1,0 +1,11 @@
+Document: yasnippet
+Title: Yasnippet Tutorial and Howto
+Author: pluskid
+Abstract: This manual describes what yasnippet is
+ and how it can be used to automatically expand an
+ abbreviation into function templates on Emacs.
+Section: Help
+
+Format: HTML
+Index: /usr/share/doc/elpa-yasnippet/html/index.html
+Files: /usr/share/doc/elpa-yasnippet/html/*.html

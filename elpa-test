@@ -1,0 +1,2 @@
+# `yas--load-snippet-dirs' will try to create ~/.emacs.d/snippets
+ert_eval = (setq user-emacs-directory (make-temp-file "yasnippet-test" 'dir-flag))
