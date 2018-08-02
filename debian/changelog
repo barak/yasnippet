@@ -1,3 +1,77 @@
+yasnippet (0.13.0-2) unstable; urgency=medium
+
+  * Team upload.
+  * Depend on elpa-htmlize instead of emacs-goodies-el. (Closes: #898579)
+  * Lowercase short descriptions
+  * Declare Standards-Version: 4.1.5. (No additional changes needed)
+  * debian/rules: Load htmlize before attempting to build docs.
+    - Needed to fontify src blocks.
+  * Restore build-dep on yasnippet-snippets for self-tests.
+    - Solves "Prepared just-in-time loading of snippets
+      (but no snippets found)"
+    - While it is not needed for tests to pass, elpa-yasnippet-snippets
+      enhances the quality of those tests.
+  * debian/control: Add minor enhancements to the comments.
+
+ -- Nicholas D Steeves <nsteeves@gmail.com>  Wed, 01 Aug 2018 22:10:25 -0400
+
+yasnippet (0.13.0-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * debian/control:
+    - Recommend elpa-yasnippet-snippets rather than yasnippet-snippets.
+    - Drop yasnippet-snippets from Build-Depends; it does not seem to be
+      needed for self-tests to pass.
+    - Switch Vcs from alioth to salsa.
+    - Switch to debhelper 11.
+    - Update Maintainer team name and email address.
+    - Drop emacs24 from Enhances.
+  * Declare compat level 11.
+  * Drop 0003-Debian-yas-installed-snippets-dir.patch
+    - Uses obsolete yas-installed-snippets-dir.
+    - Now elpa-yasnippets-snippets defines yasnippet-snippets-dir.
+  * Declare Standards-Version: 4.1.4.
+    - debian/control: Drop Built-Using because §7.8 says it should be used
+      "exactly when there are license or DFSG requirements to retain full
+      source code", and such requirements are not present in yasnippet.
+
+ -- Nicholas D Steeves <nsteeves@gmail.com>  Sun, 13 May 2018 15:22:01 -0400
+
+yasnippet (0.12.2-2) unstable; urgency=medium
+
+  * Remove obsolete conffile /etc/emacs/site-start.d/50yasnippet.el
+    (Closes: #884621).
+    Thanks H.-Dirk Schmitt for noting the problem.
+  * Priority extra->optional.
+  * Declare compliance with Debian Policy 4.1.2.
+
+ -- Sean Whitton <spwhitton@spwhitton.name>  Fri, 22 Dec 2017 10:07:25 +0000
+
+yasnippet (0.12.2-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Tidy Copyright: fields & bump copyright years.
+  * Add a build-conflict with elpa-org.
+    See https://github.com/joaotavora/yasnippet/issues/852
+  * Bump std-ver to 4.1.0 (no changes required).
+
+ -- Sean Whitton <spwhitton@spwhitton.name>  Sat, 02 Sep 2017 13:21:36 -0700
+
+yasnippet (0.12.1-1) unstable; urgency=medium
+
+  * New upstream release (Closes: #771159).
+  * Drop 0001-typos-and-grammar.patch
+    Merged upstream.
+  * Drop 0002-Avoiding-having-git-as-a-building-dependency.patch
+    Obsoleted by upstream's switch to use SOURCE_DATE_EPOCH.
+  * Refresh 0003-Debian-yas-installed-snippets-dir.patch
+  * Drop 0004-no-timestamp-in-html-head.patch
+    Merged upstream.
+  * Bump standards version to 4.0.0 (no changes required).
+
+ -- Sean Whitton <spwhitton@spwhitton.name>  Mon, 24 Jul 2017 15:18:42 -0700
+
 yasnippet (0.11.0-2) unstable; urgency=medium
 
   * Add missing Vcs-* fields.

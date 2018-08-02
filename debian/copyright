@@ -4,15 +4,14 @@ Source: https://github.com/capitaomorte/yasnippet
 
 Files: *
 License: GPL-3+
-Copyright: 2008-2013 Free Software Foundation, Inc.
-	   Authors: pluskid <pluskid@gmail.com>,  João Távora <joaotavora@gmail.com>
-	   Maintainer: João Távora <joaotavora@gmail.com>
+Copyright: (C) 2008-2017 Free Software Foundation, Inc.
 
 Files: debian/*
 License: GPL-3+
 Copyright: 2009 Julián Hernández Gómez <julianhernandez@gmail.com>
 	   2015 Alberto Luaces <aluaces@udc.es>, Barak A. Pearlmutter <bap@debian.org>
 	   2016 Sean Whitton <spwhitton@spwhitton.name>, Barak A. Pearlmutter <bap@debian.org>
+           2017 Sean Whitton <spwhitton@spwhitton.name>
 
 License: GPL-3+
     .
