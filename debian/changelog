@@ -13,7 +13,7 @@ yasnippet (0.13.0-2) unstable; urgency=medium
       enhances the quality of those tests.
   * debian/control: Add minor enhancements to the comments.
 
- -- Nicholas D Steeves <nsteeves@gmail.com>  Wed, 01 Aug 2018 16:44:25 -0400
+ -- Nicholas D Steeves <nsteeves@gmail.com>  Wed, 01 Aug 2018 22:10:25 -0400
 
 yasnippet (0.13.0-1) unstable; urgency=medium
 
