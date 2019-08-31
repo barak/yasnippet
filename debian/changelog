@@ -1,3 +1,10 @@
+yasnippet (0.13.0-3) unstable; urgency=medium
+
+  * Team upload.
+  * Rebuild with current dh-elpa
+
+ -- David Bremner <bremner@debian.org>  Sat, 31 Aug 2019 09:08:11 -0300
+
 yasnippet (0.13.0-2) unstable; urgency=medium
 
   * Team upload.
