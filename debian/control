@@ -28,9 +28,7 @@ Depends:
  ${misc:Depends},
 Recommends:
  elpa-yasnippet-snippets,
-Enhances:
- emacs,
- emacs25,
+Enhances: emacs
 Breaks:
  yasnippet (<< 0.11.0),
 Provides:
