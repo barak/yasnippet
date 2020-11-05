@@ -1,0 +1,22 @@
+From: Nicholas D Steeves <nsteeves@gmail.com>
+Date: Thu, 5 Nov 2020 09:29:09 -0500
+Subject: Correct link to 'Eligible snippets' headline
+Bug-Debian: https://bugs.debian.org/973152
+
+---
+ doc/snippet-expansion.org | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/doc/snippet-expansion.org b/doc/snippet-expansion.org
+index 0a00981..7de839b 100644
+--- a/doc/snippet-expansion.org
++++ b/doc/snippet-expansion.org
+@@ -227,7 +227,7 @@ For the full set of possible conditions, see the documentation for
+ 
+ ** Multiples snippet with the same key
+ 
+-The rules outlined [[Eligible%20snippets][above]] can return more than
++The rules outlined [[Eligible snippets][above]] can return more than
+ one snippet to be expanded at point.
+ 
+ When there are multiple candidates, YASnippet will let you select one.
