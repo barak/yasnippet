@@ -2,6 +2,7 @@ From: Nicholas D Steeves <nsteeves@gmail.com>
 Date: Thu, 5 Nov 2020 09:29:09 -0500
 Subject: Correct link to 'Eligible snippets' headline
 Bug-Debian: https://bugs.debian.org/973152
+Forwarded: https://github.com/joaotavora/yasnippet/pull/1081
 
 ---
  doc/snippet-expansion.org | 2 +-
