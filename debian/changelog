@@ -1,4 +1,4 @@
-yasnippet (0.14.0+git20200603.5cbdbf0d-1) UNRELEASED; urgency=medium
+yasnippet (0.14.0+git20200603.5cbdbf0d-1) unstable; urgency=medium
 
   [ Nicholas D Steeves ]
   * Add 0001-Correct-link-to-Eligible-snippets-headline.patch
@@ -13,7 +13,7 @@ yasnippet (0.14.0+git20200603.5cbdbf0d-1) UNRELEASED; urgency=medium
   [ Sean Whitton ]
   * Package upstream snapshot.
 
- -- Sean Whitton <spwhitton@spwhitton.name>  Thu, 05 Nov 2020 08:28:28 -0700
+ -- Sean Whitton <spwhitton@spwhitton.name>  Thu, 05 Nov 2020 08:31:38 -0700
 
 yasnippet (0.14.0-1) unstable; urgency=medium
 
