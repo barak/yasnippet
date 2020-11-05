@@ -15,6 +15,7 @@ Build-Depends:
 # For an explanation of the build conflict on elpa-org,
 # see https://github.com/joaotavora/yasnippet/issues/852
 Build-Conflicts: elpa-org
+Rules-Requires-Root: no
 Standards-Version: 4.1.5
 Homepage: https://github.com/joaotavora/yasnippet
 Testsuite: autopkgtest-pkg-elpa
